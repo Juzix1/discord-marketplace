@@ -11,16 +11,33 @@
         <header>
             <h1>🛒 Discord Marketplace</h1>
             <p class="subtitle">Oferty sprzedaży z naszego serwera Discord</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="totalOffers">0</div>
+                    <div class="stat-label">Aktywnych ofert</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="avgPrice">0 zł</div>
+                    <div class="stat-label">Średnia cena</div>
+                </div>
+            </div>
             <div class="last-update">
                 Ostatnia aktualizacja: <span id="lastUpdate">ładowanie...</span>
             </div>
         </header>
 
         <div class="filters">
-            <input type="text" id="searchInput" placeholder="🔍 Szukaj ofert...">
+            <input type="text" id="searchInput" placeholder="🔍 Szukaj ofert, lokalizacji, użytkownika...">
+            <select id="priceFilter">
+                <option value="all">Wszystkie</option>
+                <option value="with-price">Z ceną</option>
+                <option value="no-price">Bez ceny</option>
+            </select>
             <select id="sortSelect">
                 <option value="newest">Najnowsze</option>
                 <option value="oldest">Najstarsze</option>
+                <option value="price-low">Cena: od najtańszych</option>
+                <option value="price-high">Cena: od najdroższych</option>
             </select>
         </div>
 
@@ -36,6 +53,14 @@
     <footer>
         <p>Dane pobierane automatycznie z Discord • Aktualizacja co godzinę</p>
     </footer>
+
+    <!-- Modal -->
+    <div id="offerModal" class="modal">
+        <div class="modal-dialog">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

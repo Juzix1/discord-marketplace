@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -35,13 +35,37 @@ h1 {
 .subtitle {
     color: #666;
     font-size: 1.1em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #5865F2;
+}
+
+.stat-label {
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 5px;
 }
 
 .last-update {
     color: #888;
     font-size: 0.9em;
     font-style: italic;
+    margin-top: 15px;
 }
 
 .filters {
@@ -61,7 +85,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-#sortSelect {
+#sortSelect, #priceFilter {
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
@@ -73,7 +97,7 @@ h1 {
 
 .offers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 25px;
     margin-bottom: 30px;
 }
@@ -81,7 +105,7 @@ h1 {
 .offer-card {
     background: white;
     border-radius: 15px;
-    padding: 25px;
+    overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
@@ -92,19 +116,47 @@ h1 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
+.offer-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-gallery-indicator {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85em;
+}
+
 .offer-header {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    padding: 15px 20px;
     border-bottom: 2px solid #f0f0f0;
 }
 
-.offer-avatar {
+.offer-avatar, .offer-avatar-fallback {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.offer-avatar-fallback {
     background: #5865F2;
     display: flex;
     align-items: center;
@@ -128,18 +180,44 @@ h1 {
 }
 
 .offer-content {
-    margin-bottom: 15px;
+    padding: 20px;
     line-height: 1.6;
     color: #555;
+    min-height: 80px;
 }
 
 .offer-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-    padding-top: 15px;
+    padding: 15px 20px;
     border-top: 2px solid #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.price-tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.price-tag-empty {
+    background: #e0e0e0;
+    color: #666;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+.location-tag {
+    background: #f0f0f0;
+    color: #555;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
 }
 
 .view-discord-btn {
@@ -152,10 +230,133 @@ h1 {
     font-size: 0.9em;
     transition: background 0.3s;
     display: inline-block;
+    margin-left: auto;
 }
 
 .view-discord-btn:hover {
     background: #4752c4;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-dialog {
+    background: white;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2em;
+    color: #666;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.modal-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.modal-author {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-date {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.modal-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.modal-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.modal-image:hover {
+    transform: scale(1.05);
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+.modal-text {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.modal-footer {
+    padding: 20px 25px;
+    border-top: 2px solid #f0f0f0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.modal-price {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.modal-location {
+    background: #f0f0f0;
+    color: #555;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1em;
 }
 
 .loading {
@@ -189,6 +390,11 @@ footer {
         font-size: 2em;
     }
     
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
     .offers-grid {
         grid-template-columns: 1fr;
     }
@@ -199,5 +405,15 @@ footer {
     
     #searchInput {
         min-width: 100%;
+    }
+    
+    .modal-dialog {
+        margin: 0;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+    
+    .modal-images {
+        grid-template-columns: 1fr;
     }
 }
