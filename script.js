@@ -5,12 +5,16 @@ async function loadOffers() {
         const response = await fetch('offers.json');
         const data = await response.json();
         allOffers = data.offers || [];
-        
-        document.getElementById('lastUpdate').textContent = 
-            new Date(data.last_updated).toLocaleString('pl-PL');
-        
+
+        const date = new Date(data.last_updated);
+        date.setHours(date.getHours() + 1);
+
+        document.getElementById('lastUpdate').textContent =
+            date.toLocaleString('pl-PL');
+
         updateStats();
         displayOffers(allOffers);
+
     } catch (error) {
         console.error('Błąd ładowania ofert:', error);
         document.getElementById('offersContainer').innerHTML = 
