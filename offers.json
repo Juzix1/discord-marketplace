@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-01-12T18:05:07.672950",
+  "last_updated": "2026-01-12T18:19:58.003724",
   "offers": [
     {
       "id": "1460333378300809297",
       "author": "RuDziK",
       "author_id": "272452466887360512",
-      "avatar_url": "https://cdn.discordapp.com/avatars/272452466887360512/66ea6683ce8dfc03dabfb8e4b022bab0.png?size=1024",
+      "avatar_url": "https://cdn.discordapp.com/avatars/272452466887360512/a_28f13b3ddc2ae762028ce9d1b82d45aa.gif?size=1024",
       "content": "Sprzedam Paróweczki Kajzereczki I Czteropak\ncena: 15.49 zł\nstan: nowy\nLokalizacja: Kruszynek 2",
       "timestamp": "2026-01-12T18:03:29.069000+00:00",
       "url": "https://discord.com/channels/339740978363498496/1460330485967224862/1460333378300809297",
@@ -28,20 +28,6 @@
       ],
       "price": 21,
       "location": "aleksandrów kujawski"
-    },
-    {
-      "id": "1460331040273858681",
-      "author": "Pirrot",
-      "author_id": "417347669464317974",
-      "avatar_url": "https://cdn.discordapp.com/avatars/417347669464317974/c2067b8bfa569114b57f084ac26a27fd.png?size=1024",
-      "content": "Sprzedam Kota o imieniu Dawid Centkowski\ncena: 1 zł\nstan: nówka funkiel\nLokalizacja: Odolin",
-      "timestamp": "2026-01-12T17:54:11.640000+00:00",
-      "url": "https://discord.com/channels/339740978363498496/1460330485967224862/1460331040273858681",
-      "images": [
-        "https://cdn.discordapp.com/attachments/1460330485967224862/1460331039959421012/andrew-tate-wojak-v0-1cuhstc82lea1.png?ex=696686c3&is=69653543&hm=877216566e455839cc7f82f66e8b5f26794ab8c2752541c317dc5db0df149598&"
-      ],
-      "price": 1,
-      "location": "odolin"
     }
   ]
 }
