@@ -5,13 +5,14 @@ on:
     - cron: '0 * * * *'  # Co godzinę
   workflow_dispatch:  # Możliwość ręcznego uruchomienia
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
-  fetch-and-deploy:
+  fetch-messages:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
     
     steps:
     - name: Checkout repository
@@ -39,6 +40,16 @@ jobs:
         git config --global user.email 'actions@github.com'
         git add offers.json
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update offers from Discord" && git push)
+
+  deploy:
+    needs: fetch-messages
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ref: main
     
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
