@@ -1,6 +1,34 @@
 {
-  "last_updated": "2026-01-12T17:54:38.501402",
+  "last_updated": "2026-01-12T18:05:07.672950",
   "offers": [
+    {
+      "id": "1460333378300809297",
+      "author": "RuDziK",
+      "author_id": "272452466887360512",
+      "avatar_url": "https://cdn.discordapp.com/avatars/272452466887360512/66ea6683ce8dfc03dabfb8e4b022bab0.png?size=1024",
+      "content": "Sprzedam Paróweczki Kajzereczki I Czteropak\ncena: 15.49 zł\nstan: nowy\nLokalizacja: Kruszynek 2",
+      "timestamp": "2026-01-12T18:03:29.069000+00:00",
+      "url": "https://discord.com/channels/339740978363498496/1460330485967224862/1460333378300809297",
+      "images": [
+        "https://cdn.discordapp.com/attachments/1460330485967224862/1460333378011271190/KlipwideobeztytuuWykonanozapomocClipchamp-ezgif.com-crop.gif?ex=696688f1&is=69653771&hm=c23e434602f4465cc4e515b3c9bfee867b0d1e51faa628e1a332f365840b5aa2&"
+      ],
+      "price": 49,
+      "location": "kruszynek 2"
+    },
+    {
+      "id": "1460332367360032809",
+      "author": "John",
+      "author_id": "436841972670529537",
+      "avatar_url": "https://cdn.discordapp.com/avatars/436841972670529537/5ab734f02049cb0ca63143bb0ad98fb6.png?size=1024",
+      "content": "Sprzedam mózg\ncena: 99.21 zł\nstan: używany (minimalnie)\nLokalizacja: Aleksandrów Kujawski",
+      "timestamp": "2026-01-12T17:59:28.042000+00:00",
+      "url": "https://discord.com/channels/339740978363498496/1460330485967224862/1460332367360032809",
+      "images": [
+        "https://cdn.discordapp.com/attachments/1460330485967224862/1460332367016104078/iu_.png?ex=696687ff&is=6965367f&hm=d89fcf8b5c03abfdf5525d14a87616c990c93926ee2118c1a48131d6e86a3dec&"
+      ],
+      "price": 21,
+      "location": "aleksandrów kujawski"
+    },
     {
       "id": "1460331040273858681",
       "author": "Pirrot",
