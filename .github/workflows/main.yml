@@ -2,8 +2,9 @@ name: Fetch Discord Messages
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Co godzinę
-  workflow_dispatch:  # Możliwość ręcznego uruchomienia
+    - cron: '*/10 * * * *'
+    # - cron: '0 * * * *'  # Co godzinę
+  workflow_dispatch:
 
 permissions:
   contents: write
