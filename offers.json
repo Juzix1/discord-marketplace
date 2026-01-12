@@ -1,19 +1,31 @@
 {
-  "last_updated": "2026-01-12T17:26:56.702661",
+  "last_updated": "2026-01-12T17:36:19.113848",
   "offers": [
     {
       "id": "1460324038193844266",
       "author": "Pirrot",
+      "author_id": "417347669464317974",
+      "avatar_url": "https://cdn.discordapp.com/avatars/417347669464317974/c2067b8bfa569114b57f084ac26a27fd.png?size=1024",
       "content": "Sprzedam psa o imieniu Dawid Centkowski\nCena: za darmo\nstan lekko poturbowany\nLokalizacja: Odolin",
       "timestamp": "2026-01-12T17:26:22.214000+00:00",
-      "url": "https://discord.com/channels/1091325593188048916/1460315552257151129/1460324038193844266"
+      "url": "https://discord.com/channels/1091325593188048916/1460315552257151129/1460324038193844266",
+      "images": [],
+      "price": null,
+      "location": "odolin"
     },
     {
       "id": "1460318968295194918",
       "author": "Pirrot",
+      "author_id": "417347669464317974",
+      "avatar_url": "https://cdn.discordapp.com/avatars/417347669464317974/c2067b8bfa569114b57f084ac26a27fd.png?size=1024",
       "content": "Sprzedam grę Arc raiders\nCena: 85 zł\nstan nowy\nLokalizacja: W dupie",
       "timestamp": "2026-01-12T17:06:13.456000+00:00",
-      "url": "https://discord.com/channels/1091325593188048916/1460315552257151129/1460318968295194918"
+      "url": "https://discord.com/channels/1091325593188048916/1460315552257151129/1460318968295194918",
+      "images": [
+        "https://cdn.discordapp.com/attachments/1460315552257151129/1460318968031219886/wallhaven-gwwo37.png?ex=69667b85&is=69652a05&hm=ff3fd45fd6365e97f00f032b7ca63cd1e16cf0dc2e933b01fe64b9d3f31c0e21&"
+      ],
+      "price": 85,
+      "location": "w dupie"
     }
   ]
 }
