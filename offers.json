@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-01-12T22:59:45.269472",
+  "last_updated": "2026-01-12T23:25:23.678054",
   "offers": [
+    {
+      "id": "1460412025430609921",
+      "author": "Pita Ko-wang Xi",
+      "author_id": "352118051585654785",
+      "avatar_url": "https://cdn.discordapp.com/guilds/339740978363498496/users/352118051585654785/avatars/a_17622859c25c5bcffcdd46b1a7dbd5dd.gif?size=1024",
+      "content": "Sprzedam Hindusa z tele-scamu\nCena: 67,67 zł\nStan: Używany\nLokalizacja: Rożno",
+      "timestamp": "2026-01-12T23:16:00.006000+00:00",
+      "url": "https://discord.com/channels/339740978363498496/1460330485967224862/1460412025430609921",
+      "images": [
+        "https://cdn.discordapp.com/attachments/1460330485967224862/1460412024914837596/image.png?ex=6966d22f&is=696580af&hm=5458eaa416f01ba99adeb271593169a58630d2ca2b368e668dd6f4d96be79034&"
+      ],
+      "price": 67,
+      "location": "rożno"
+    },
     {
       "id": "1460341878330228922",
       "author": "RuDziK",
