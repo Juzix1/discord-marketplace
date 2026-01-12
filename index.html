@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Discord Marketplace</h1>
+            <p class="subtitle">Oferty sprzedaży z naszego serwera Discord</p>
+            <div class="last-update">
+                Ostatnia aktualizacja: <span id="lastUpdate">ładowanie...</span>
+            </div>
+        </header>
+
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="🔍 Szukaj ofert...">
+            <select id="sortSelect">
+                <option value="newest">Najnowsze</option>
+                <option value="oldest">Najstarsze</option>
+            </select>
+        </div>
+
+        <div id="offersContainer" class="offers-grid">
+            <div class="loading">Ładowanie ofert...</div>
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>😕 Nie znaleziono ofert spełniających kryteria</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Dane pobierane automatycznie z Discord • Aktualizacja co godzinę</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

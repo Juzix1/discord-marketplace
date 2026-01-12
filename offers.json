@@ -1,0 +1,19 @@
+{
+  "last_updated": "2026-01-12T10:00:00",
+  "offers": [
+    {
+      "id": "123456789",
+      "author": "Jan Kowalski",
+      "content": "Sprzedam iPhone 13 Pro 128GB\nCena: 2500 zł\nStan idealny, komplet z pudełkiem\nLokalizacja: Warszawa",
+      "timestamp": "2026-01-12T09:30:00",
+      "url": "https://discord.com/channels/YOUR_SERVER/YOUR_CHANNEL/123456789"
+    },
+    {
+      "id": "123456790",
+      "author": "Anna Nowak",
+      "content": "Na sprzedaż laptop Dell XPS 15\nCena: 3500 zł do negocjacji\n16GB RAM, 512GB SSD\nKraków",
+      "timestamp": "2026-01-11T15:20:00",
+      "url": "https://discord.com/channels/YOUR_SERVER/YOUR_CHANNEL/123456790"
+    }
+  ]
+}
