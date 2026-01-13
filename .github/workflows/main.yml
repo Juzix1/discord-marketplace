@@ -2,7 +2,7 @@ name: Fetch Discord Messages
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/60 * * * *'
     # - cron: '0 * * * *'  # Co godzinę
   workflow_dispatch:
 
