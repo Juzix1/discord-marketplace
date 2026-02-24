@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-23T23:34:28.304889",
+  "last_updated": "2026-02-24T02:06:09.109759",
   "offers": [
     {
       "id": "1460431255274520576",
@@ -10,7 +10,7 @@
       "timestamp": "2026-01-13T00:32:24.758000+00:00",
       "url": "https://discord.com/channels/339740978363498496/1460330485967224862/1460431255274520576",
       "images": [
-        "https://cdn.discordapp.com/attachments/1460330485967224862/1460431255047901244/simon2jpg.jpg?ex=699d9a58&is=699c48d8&hm=0388f9f8785216fd4dd5790b0a3dd3c528252d26a2f35faf7697342506e4ae7e&"
+        "https://cdn.discordapp.com/attachments/1460330485967224862/1460431255047901244/simon2jpg.jpg?ex=699e4318&is=699cf198&hm=90c143ddc1c914995713b3872161dac2b7f626f4026c33372c9285fc8896fbda&"
       ],
       "price": 67,
       "location": "rożno-parcele"
@@ -24,35 +24,35 @@
       "timestamp": "2026-01-13T00:25:29.560000+00:00",
       "url": "https://discord.com/channels/339740978363498496/1460330485967224862/1460429513807626290",
       "images": [
-        "https://cdn.discordapp.com/attachments/1460330485967224862/1460429513337868329/54435797_620035301793475_208242606038056960_n.jpg?ex=699d98b9&is=699c4739&hm=a75ee57ad48bd32eaa977eb1cd4e34d05a2dfa339de71b269b29763b865c66fc&"
+        "https://cdn.discordapp.com/attachments/1460330485967224862/1460429513337868329/54435797_620035301793475_208242606038056960_n.jpg?ex=699e4179&is=699ceff9&hm=55f1c8279f8e01e38a6a0e88ebe41e0f0e1b771c5c90a2a7acf730b89acf564c&"
       ],
       "price": 10,
       "location": "aleksandrów kujawski narutowicza 49"
     },
     {
       "id": "1460428637575712900",
-      "author": "Peter Griffith",
+      "author": "Szymon Trzaskowski",
       "author_id": "412237001027223552",
       "avatar_url": "https://cdn.discordapp.com/avatars/412237001027223552/4b93bfc05c4ba72528a7c1121ec9ce5e.png?size=1024",
       "content": "Sprzedam damana \nCena: 20 zł \nStan: najebany\nLokalizacja: władysławowo",
       "timestamp": "2026-01-13T00:22:00.650000+00:00",
       "url": "https://discord.com/channels/339740978363498496/1460330485967224862/1460428637575712900",
       "images": [
-        "https://cdn.discordapp.com/attachments/1460330485967224862/1460428637311602936/20250628_130902.jpg?ex=699d97e8&is=699c4668&hm=9d29bd9c3bf6e40c7d97d6d521e288810ce805d5fb6d591ae55ecd2dbcc1f4ae&"
+        "https://cdn.discordapp.com/attachments/1460330485967224862/1460428637311602936/20250628_130902.jpg?ex=699e40a8&is=699cef28&hm=5383d79cea3ab167d24eb6bc7970ec438e631f5664c4dd2e6c97c8f5861d0f3c&"
       ],
       "price": 20,
       "location": "władysławowo"
     },
     {
       "id": "1460428266073624669",
-      "author": "Peter Griffith",
+      "author": "Szymon Trzaskowski",
       "author_id": "412237001027223552",
       "avatar_url": "https://cdn.discordapp.com/avatars/412237001027223552/4b93bfc05c4ba72528a7c1121ec9ce5e.png?size=1024",
       "content": "Sprzedam żyda \nCena: 4 zł",
       "timestamp": "2026-01-13T00:20:32.077000+00:00",
       "url": "https://discord.com/channels/339740978363498496/1460330485967224862/1460428266073624669",
       "images": [
-        "https://cdn.discordapp.com/attachments/1460330485967224862/1460428265759178773/20240225_112513.jpg?ex=699d9790&is=699c4610&hm=df8ff85730a720db493e3d842cb799e770861474457e8f992e25895827d90b64&"
+        "https://cdn.discordapp.com/attachments/1460330485967224862/1460428265759178773/20240225_112513.jpg?ex=699e4050&is=699ceed0&hm=deabc0f206aca348d52e2eb2a740739c1eff608d0b3106e84c429bb447fe32e6&"
       ],
       "price": 4,
       "location": null
